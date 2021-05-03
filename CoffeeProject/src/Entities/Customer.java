@@ -8,7 +8,7 @@ public class Customer implements Entity{
 	public int Id;
 	public String FirstName;
 	public String LastName;
-	public Date DateofBirth;
+	public int DateofBirth;
 	public String NationalyIdentity;
 	
 	public int getId() {
@@ -29,10 +29,10 @@ public class Customer implements Entity{
 	public void setLastName(String lastName) {
 		LastName = lastName;
 	}
-	public Date getDateofBirth() {
+	public int getDateofBirth() {
 		return DateofBirth;
 	}
-	public void setDateofBirth(Date dateofBirth) {
+	public void setDateofBirth(int dateofBirth) {
 		DateofBirth = dateofBirth;
 	}
 	public String getNationalyIdentity() {

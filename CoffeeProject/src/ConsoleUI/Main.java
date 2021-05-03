@@ -10,11 +10,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Customer customer=new Customer(1,"Eren","Arý",2004,"111111111");
-		BaseCustomerManager baseCustomerManager=new StarbucksCustomerManager(new MernisServiceAdapter());
-
+		Customer customer=new Customer();
+		customer.setId(1);
+		customer.setFirstName("Eren");
+		customer.setLastName("Arý");
+		customer.setDateofBirth(2004);
+		BaseCustomerManager baseCustomerManager=new StarbucksCustomerManager();
 		baseCustomerManager.Save(customer);
-		
 
 	}
 
