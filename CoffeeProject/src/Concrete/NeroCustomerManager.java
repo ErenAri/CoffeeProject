@@ -3,6 +3,7 @@ package Concrete;
 
 import Entities.Customer;
 import Abstract.BaseCustomerManager;
+import Abstract.CustomerCheckService;
 
 public class NeroCustomerManager extends BaseCustomerManager{
 

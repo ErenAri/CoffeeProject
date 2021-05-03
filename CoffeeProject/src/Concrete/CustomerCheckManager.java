@@ -4,15 +4,16 @@ import Abstract.CustomerCheckService;
 
 import Entities.Customer;
 import sun.security.util.ECKeySizeParameterSpec;
+import tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy;
 
 public class CustomerCheckManager implements CustomerCheckService{
 
 	@Override
 	public boolean CheckIfRealPerson(Customer customer) {
 		
-		MernisServiceReferance.KPSPublicSoapClient client = new KPSPublicSoapClient();
+		KPSPublicSoapProxy client = new KPSPublicSoapProxy();
 		
-		return True;
+		return true;
 	}
 
 	

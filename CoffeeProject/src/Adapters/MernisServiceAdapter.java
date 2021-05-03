@@ -19,10 +19,10 @@ public class MernisServiceAdapter implements CustomerCheckService{
 				
 						try {
 							result =client.TCKimlikNoDogrula(
-									Long.parseLong(customer.NationalityId()),
+									Long.parseLong(customer.getNationalyIdentity()),
 									customer.FirstName.toUpperCase(),
-									customer.LastName().toUpperCase(),
-									customer.DateOfBirth());
+									customer.getLastName().toUpperCase(),
+									customer.getDateofBirth());
 						} catch (NumberFormatException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
