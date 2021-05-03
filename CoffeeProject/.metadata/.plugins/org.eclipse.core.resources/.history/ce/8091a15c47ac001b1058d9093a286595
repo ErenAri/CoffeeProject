@@ -1,0 +1,15 @@
+package Concrete;
+
+
+import Entities.Customer;
+import Abstract.BaseCustomerManager;
+
+public class NeroCustomerManager extends BaseCustomerManager{
+
+	private CustomerCheckService _customerCheckService;
+	public void Save(Customer customer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
